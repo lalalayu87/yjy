@@ -9,5 +9,9 @@
     <!-- 1. 사용자가 index를 호출해서 IndexController로 넘어감-->
         <!-- collaborators and configuration for this bean go here -->
     </bean>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    	<property name="prefix" value="/WEB-INF/view/"></property>
+    	<property name="suffix" value=".jsp"></property>
+    </bean>
 
 </beans>
