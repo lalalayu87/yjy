@@ -8,9 +8,12 @@
        						 https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <bean id="/index" class="webProject.IndexController">  
-    <!-- id는 url. 즉 index라는 url이 호출이 오면 class가 실행된다  -->
-    <!-- 1. 사용자가 index를 호출해서 IndexController로 넘어감-->
-        <!-- collaborators and configuration for this bean go here -->
+   		 <!-- id는 url. 즉 index라는 url이 호출이 오면 class가 실행된다  -->
+    	 <!-- 1. 사용자가 index를 호출해서 IndexController로 넘어감-->
+    </bean>
+    <bean id="/notice/list" class="webProject.notice.ListController">
+    </bean>
+    <bean id="/notice/detail" class="webProject.notice.DetailController">
     </bean>
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="prefix" value="/WEB-INF/view/"></property>
