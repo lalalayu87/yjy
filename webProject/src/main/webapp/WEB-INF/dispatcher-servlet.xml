@@ -16,20 +16,11 @@
     <bean id="/notice/detail" class="webProject.notice.DetailController">
     </bean>
     
-    <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
-    	<property name="definitions" value="/WEB-INF/tiles.xml" />
-	</bean>
-
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-   		<property name="prefix" value="/WEB-INF/view/"></property>
-   		<property name="suffix" value=".jsp"></property>
-   		<property name="order" value="2" />
-	</bean>
-    
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     	<property name="prefix" value="/WEB-INF/view/"></property>
     	<property name="suffix" value=".jsp"></property>
     </bean>
+    
     <mvc:resources location="/static/" mapping="/**">
     </mvc:resources>
 

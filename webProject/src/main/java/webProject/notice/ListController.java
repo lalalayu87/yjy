@@ -11,7 +11,7 @@ public class ListController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		//2. handleRequest가 실행됨
 		
-		ModelAndView mv = new ModelAndView("notice.list");
+		ModelAndView mv = new ModelAndView("notice/list");
 		//mv.setViewName("/WEB-INF/view/notice/index.jsp");
 		
 		
